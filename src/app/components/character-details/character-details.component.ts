@@ -6,10 +6,10 @@ import { NgIf } from '@angular/common';
   selector: 'app-character-details',
   template: `
     <div *ngIf="character">
-      <h2>{{ character.name }} Detalles</h2>
+      <h2>Modificar datos de {{ character.name }} </h2>
       <label>
-        Nombre:
-        <input [(ngModel)]="character.name" placeholder="Nombre del Personaje">
+        Modificar datos:
+        <input [(ngModel)]="character.name" placeholder="Datos del Personaje">
       </label>
       <button (click)="update()">Guardar</button>
     </div>
