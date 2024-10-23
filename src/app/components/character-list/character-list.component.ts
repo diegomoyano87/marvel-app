@@ -7,7 +7,7 @@ import { NgFor } from '@angular/common';
     <ul>
       <li *ngFor="let character of characters" (click)="select(character)">
         {{ character.name }}
-        <button (click)="delete(character.id, $event)">Borrar</button>
+        <button (click)="delete(character.id, $event)"> Borrar Personaje</button>
       </li>
     </ul>
   `,

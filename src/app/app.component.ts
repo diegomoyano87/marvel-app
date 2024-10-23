@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
   selector: 'app-root',
   template: `
     <h1>Personajes de Marvel </h1>
-    <h2>-- Modifica los datos haciendo un click --</h2>
+    <h2> Modifica los datos haciendo un click sobre los Personajes</h2>
     <app-character-list 
       [characters]="characters" 
       (selectCharacter)="onSelectCharacter($event)"

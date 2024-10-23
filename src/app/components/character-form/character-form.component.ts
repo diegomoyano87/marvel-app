@@ -6,8 +6,8 @@ import { FormsModule } from '@angular/forms';
   template: `
     <h2>Agregar Nuevo Personaje</h2>
     <label>
-      Nombre del Personaje:
-      <input [(ngModel)]="newCharacter.name" placeholder="nombre" id="characterName" name="characterName">
+       <h4>Nombre del Personaje:</h4>
+      <input [(ngModel)]="newCharacter.name" placeholder="Nombre Personaje" id="characterName" name="characterName">
     </label>
     <button (click)="add()">Agregar</button>
   `,
