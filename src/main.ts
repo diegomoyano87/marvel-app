@@ -5,6 +5,6 @@ import { FormsModule } from '@angular/forms';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    importProvidersFrom(FormsModule) // Importar FormsModule para ngModel
+    importProvidersFrom(FormsModule)
   ]
 });
