@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.marvelApiService.getCharacters().subscribe(
       (data) => {
-        this.characters = data.data.results; // Ajustamos según la respuesta de la API
+        this.characters = data.data.results; 
       },
       (error) => {
         console.error('Error fetching characters:', error);
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
 
   onAddCharacter(character: any) {
     this.marvelApiService.addCharacter(character).subscribe(newCharacter => {
-      this.characters.push(newCharacter); // Agrega el nuevo personaje a la lista
+      this.characters.push(newCharacter); 
     });
   }
 
@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
     this.marvelApiService.updateCharacter(updatedCharacter.id, updatedCharacter).subscribe(() => {
       const index = this.characters.findIndex(character => character.id === updatedCharacter.id);
       if (index !== -1) {
-        this.characters[index] = updatedCharacter; // Actualiza el personaje en la lista
+        this.characters[index] = updatedCharacter;
       }
       this.selectedCharacter = null;
     });

@@ -9,7 +9,7 @@ import { NgIf } from '@angular/common';
       <h2>{{ character.name }} Detalles</h2>
       <label>
         Nombre:
-        <input [(ngModel)]="character.name" placeholder="Nombre">
+        <input [(ngModel)]="character.name" placeholder="Nombre del Personaje">
       </label>
       <button (click)="update()">Guardar</button>
     </div>

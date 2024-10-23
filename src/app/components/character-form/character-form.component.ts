@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
     <h2>Agregar Nuevo Personaje</h2>
     <label>
       Nombre:
-      <input [(ngModel)]="newCharacter.name" placeholder="name">
+      <input [(ngModel)]="newCharacter.name" placeholder="nombre">
     </label>
     <button (click)="add()">Agregar</button>
   `,
